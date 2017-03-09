@@ -1,5 +1,9 @@
 title: Page
 
+pages: true
+
+files: true 
+
 fields:
   title:
     label: Title

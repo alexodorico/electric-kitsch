@@ -3,24 +3,21 @@
 <head>
 
   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
+  <title><?= $site->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
+
+  <link href="https://fonts.googleapis.com/css?family=Arimo:700|News+Cycle:700|Work+Sans:600" rel="stylesheet">
 
   <?= css('assets/css/index.css') ?>
 
 </head>
 <body>
 
-  <header class="header wrap wide" role="banner">
-    <div class="grid">
+  <div class="wrapper">  
+	<img id="logo" src="<?= $site->image()->url() ?>">
+  </div>
 
-      <div class="branding column">
-        <a href="<?= url() ?>" rel="home"><?= $site->title()->html() ?></a>
-      </div>
-
-      <?php snippet('menu') ?>
-
-    </div>
-  </header>
+  <ul class="accordion" data-accordion data-allow-all-closed="true">

@@ -4,7 +4,7 @@ pages:
   template: team
   num: zero
 
-files: false
+files: true 
 
 options: 
   template: false  
@@ -14,10 +14,6 @@ fields:
   title:
     label: Title
     type: title
-    
-  intro:
-    label: Intro
-    type: textarea
     
   text:
     label: Text
